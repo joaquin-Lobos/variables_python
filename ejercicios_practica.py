@@ -25,11 +25,15 @@ def ej1():
     # Almacenar el valor de la suma en una variable
     # ej:
     # operacion = .....
+    resultado_suma = numero_1 + numero_2
 
     # Imprimir en pantalla el resultado de la suma
     # print(....)
+    print("el resultado es:", resultado_suma)
 
     # Repita el procedimiento para realizar la resta
+    resultado_resta = numero_1 - numero_2
+    print("el resultado es:", resultado_resta)
 
 
 def ej2():
@@ -38,28 +42,33 @@ def ej2():
     # Operadores con números decimales
     # Ahora los valores a operar deben ser ingresados por
     # consola con la función "input" como se ve a continuación
-    print('Ingrese el primer número decimal a operar:')
+    print('Ingrese el primer número entero a operar:')
     numero_1 = int(input())
 
-    print('Ingrese el segundo número decimal a operar:')
+    print('Ingrese el segundo número entero a operar:')
     numero_2 = int(input())
 
     # Alumno: Imprima en pantalla los dos números decimales solicitados
     # print(....)
-
+    print("el primer numero ingresado es:", numero_1)
+    print("el segundo numero ingresado es:", numero_2)
     # Alumno: Calcule la suma, resta, división y multiplicación de los números ingresados
+    suma = numero_1 + numero_2
+    resta = numero_1 - numero_2
+    division = numero_1 / numero_2
+    multiplicacion = numero_1 * numero_2
     # numero_1, numero_2
     # Imprima en pantalla todos los resultados con el siguiente formato de ejemplo:
     # El resultado de sumar 4 y 2 es 6
 
     # Suma
-
+    print("el resultado de sumar", numero_1, "y", numero_2, "es", suma)
     # Resta
-
+    print("el resultado de restar", numero_1, "y", numero_2, "es", resta)
     # División
-
+    print("el resultado de dividir", numero_1, "y", numero_2, "es", division)
     # Multiplicación
-
+    print("el resultado de multiplicar", numero_1, "y", numero_2, "es", multiplicacion)
 
 def ej3():
     # Ejemplos variables de texto
@@ -73,11 +82,13 @@ def ej3():
     apellido = str(input())
 
     # Imprima su nombre completo
-
+    print("mi nombre es", nombre, apellido)
     # Almacenar su nombre completo en una variable
     # nombre_completo = .....
-
+    nombre_completo = nombre + apellido
     # Imprimir la cantidad de letras que posee su nombre completo
+    nombre_completo_len = len(nombre_completo)
+    print("mi nombre completo tiene", nombre_completo_len, "caracteres")
 
 
 def ej4():
@@ -94,9 +105,14 @@ def ej4():
     print('Ingrese palabra 3:')
     palabra_3 = str(input())
 
+    print('Ingrese palabra 4:')
+    palabra_4 = str(input())
+
     # De cada palabra debe tomar la primera letra y armar el acrónimo
     # Ejemplo: Alumbrado, barrido y limpieza --> ABL
+    acronimo = palabra_1[0] + palabra_2[0] + palabra_3[0] + palabra_4[0]
     # Imprimir el resultado en pantalla
+    print(acronimo)
 
 
 def ej5():
@@ -112,12 +128,14 @@ def ej5():
     # De la primera palabra tome las primeras tres letras, utilice el operador :
     # De la segunda palabra tome las últimas tres letras, utilice el operador :
     # Formar una nueva palabra con los recortes solicitados
+    nueva_palabra = palabra_1[:3] + palabra_2[:3]
     # Imprima en pantalla los resultados
+    print(nueva_palabra)
 
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
+    # ej1()
     # ej2()
     # ej3()
     # ej4()
